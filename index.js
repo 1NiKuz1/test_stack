@@ -3,7 +3,7 @@ const fs = require("fs");
 const reportOfServices = require("./reportOfServices"); // Сруктура отчета чеков по всем месяцам
 const services = new Set(); // Все сервисы из исходного файла "чеки.txt"
 
-const CHEKS_DIR = "./cheks"; // Путь до папки с исходными и результирующими данными
+const CHEKS_DIR = "./checks"; // Путь до папки с исходными и результирующими данными
 
 // Обработка исходого фала "чеки.txt"
 fs.readFile(`${CHEKS_DIR}/чеки.txt`, "utf8", (err, data) => {
